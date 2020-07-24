@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <a onclick="helloWorld();" href="#">Click here</a>
+
+    <img src="img1.jpg" height="300px" width="200px" onclick="alert('thankyou for purchasing from us');"> <img
+        src="img2.jpg" onclick="alert('thankyou for purchasing from us');" height="300px" width="200px"
+        style="margin:20px;">
+
+
+    <table id="courses" border="1" ; width="300px" ;>
+        <thead>
+            <th>Index</th>
+            <th>Name</th>
+            <th colspan="2" ;>Class</th>
+
+        </thead>
+        <tbody align="center" id="tbody">
+            <tr id="row">
+
+                <td id="index">0</td>
+                <td id="name">Sohaib</td>
+                <td id="class">9</td>
+                <td><button onclick="remove();">Delete</button></td>
+            </tr>
+            <tr id="row">
+                <td>1</td>
+                <td>Saqib</td>
+                <td>10</td>
+                <td><button onclick="remove();">Delete</button></td>
+            </tr>
+            <tr id="row">
+                <td>2</td>
+                <td>Huzaifa</td>
+                <td>11</td>
+                <td><button onclick="remove();">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <img src="IMG_7752.jpg" id="image" onmouseover="changeImage('image','car.jpeg')"
+        onmouseout="changeImage('image','IMG_7752.jpg')" height="300px" width="200px">
+
+
+    <input type="text" id="result" onclick="showResult()">
+    <button id="increase" onclick="increase()">Increase</button>
+    <button id="decrease" onclick="decrease()">Decrease</button>
+
+
+
+
+
+    <!-- <div> <h1>DOM</h1><div id='form-content' class=”content”><label for=”first-name”>First Name</label> <input type=”text” id="firstName"/> <label for=”last-name”>Last Name</label> <input type=”text” id="lastName"/> <label for=”email”>Email</label> <input type=”text” id="email"/> </div><div id='main-content' class=”content”><p class="redner"> First Name : Alex</p><p class="redner" id=”lastName”>Last Name: Bank</p><p class="redner"> Email : alexbank@example.com</p><p class="redner"> Country : Pakistan </p><p class="redner"> contact : +92 300 1234567</p></div></div> -->
+
+
+
+
+    <div>
+        <h1>DOM</h1>
+        <h2>This is signup form aswell, Click on submit to get information below</h2>
+        <div id='form-content' class=”content”><label for=”first-name”>First Name</label> <input type=”text”
+                id="firstName" /> <label for=”last-name”>Last Name</label> <input type=”text” id="lastName" /> <label
+                for=”email”>Email</label> <input type=”text” id="email" /> <button onclick="signUp()">submit</button></div>
+                
+
+                
+        <div id='main-content' class=”content”>
+            <p class="redner"> First Name : Alex</p>
+            <p class="redner" id=”lastName”>Last Name: Bank</p>
+            <p class="redner"> Email : alexbank@example.com</p>
+            <p class="redner"> Country : Pakistan </p>
+            <p class="redner"> contact : +92 300 1234567</p>
+        </div>
+    </div>
+
+
+
+
+
+
+<div id="formDetails" style="background-color:rgb(178, 221, 178);">
+
+</div>
+
+
+
+
+<p id='pera'>
+    Hello my name is azhar khan and I am web Developer <a href="javascript:void(0);" onclick="readMore();">Click for more</a> 
+</p>
+
+
+
+<table border="1">
+    <thead>
+        <th>Index</th>
+        <th>Name</th>
+        <th colspan="2">Class</th>
+    </thead>
+    <tbody id="tableBody">
+
+        
+    </tbody>
+</table>
+<button onclick="table()">Add Row</button>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
